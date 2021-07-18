@@ -1,6 +1,7 @@
 FROM debian:buster
 
 ENV FFMPEG_SRC https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n4.3.2.zip
+ENV PKG_CONFIG_PATH /usr/local/lib/pkgconfig/
     
 RUN apt-get -y update && apt-get -y install \
   curl \

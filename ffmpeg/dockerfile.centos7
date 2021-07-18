@@ -1,6 +1,7 @@
 FROM centos:7
 
 ENV FFMPEG_SRC https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n4.3.2.zip
+ENV PKG_CONFIG_PATH /usr/local/lib/pkgconfig/
     
 RUN yum -y update && yum -y install \
     epel-release \
