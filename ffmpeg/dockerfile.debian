@@ -40,7 +40,7 @@ RUN mkdir -p /ffmpeg /root/ffmpeg && \
     rm src.zip
   
 RUN cd /ffmpeg/FFmpeg-n4.3.2 && \
-    ./configure --prefix=/root/ffmpeg \
+    ./configure \
     --pkg-config-flags="--static" \
     --extra-ldexeflags="-static" \
     --disable-doc \
