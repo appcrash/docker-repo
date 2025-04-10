@@ -23,6 +23,7 @@ RUN apt-get -y update && apt-get -y install \
   libxcb1-dev \
   libxcb-shm0-dev \
   libxcb-xfixes0-dev \
+  libx264-dev \
   meson \
   ninja-build \
   pkg-config \
@@ -47,6 +48,7 @@ RUN cd /ffmpeg/FFmpeg-n4.3.2 && \
     --enable-gpl \
     --enable-version3 \
     --enable-nonfree \
+    --enable-libx264 \
     --enable-libopencore-amrnb \
     --enable-libopencore-amrwb \
     --enable-libvo-amrwbenc && \
